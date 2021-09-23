@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/favicon.png" type="image/x-icon">
+    <title>PilloBoard</title>
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+</head>
+<style>
+    tr, th, td {
+    text-align: center;
+    }
+
+</style>
+<body>
+   <main class="container shadow">
+       <div class="row">
+           <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+            <table class="table">
+                <thead> 
+                    <tr>
+                        <th colspan="2" class="text-center">Saludos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="d-flex justify-content-around">
+                        <td class="btn btn-danger" id="saludo1">Como Está Caballero</td>
+                        <td class="btn btn-danger" id="saludo2">Gracias Por LLamar a Pillo Phone</td>
+                        <td class="btn btn-danger" id="saludo3">Deseo conocerlo intimamente</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="text-center">Despedidas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="d-flex justify-content-around">
+                        <td class="btn btn-danger" id="despedida">Que tengas un día productivo crack</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="4">Afirmar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="d-flex justify-content-around">
+                            <td class="btn btn-danger" id="afirma1">Es una realidad</td>
+                            <td class="btn btn-danger" id="afirma2">No claro wey</td>
+                            <td class="btn btn-danger" id="afirma3">Claro que lo soy</td>
+                            <td class="btn btn-danger" id="afirma4">Coño de la madre claro que lo soy</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="3">Negar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="d-flex justify-content-around">
+                            <td class="btn btn-danger" id="negar1">Ni de coña ni de chiste</td>
+                            <td class="btn btn-danger" id="negar2">Pues no</td>
+                            <td class="btn btn-danger" id="negar3">Se me comento que eso es un grave error</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Lugar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="d-flex justify-content-around">
+                            <td class="btn btn-danger" id="lugar1">Estamos literalmente frente al oceano</td>
+                            <td class="btn btn-danger" id="lugar2">Estamos mero el la zona rosa</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="text-center">Nombre</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="d-flex justify-content-around">
+                            <td class="btn btn-danger" id="nombre">Soy Luicito</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="3">Baño</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="d-flex justify-content-around">
+                            <td class="btn btn-danger" id="banho1">Quiero Usar el Sanitario</td>
+                            <td class="btn btn-danger" id="banho2">El baño me tiene emocionadisimo</td>
+                            <td class="btn btn-danger" id="banho3">El baño es algo primordial en toda la idea que tengo pensada</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="3">Gastronomicas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="d-flex justify-content-around">
+                            <td class="btn btn-danger" id="gas1">Send noods</td>
+                            <td class="btn btn-danger" id="gas2">Send noods que mi pancita</td>
+                            <td class="btn btn-danger" id="gas3">Un taco de gusanos 1</td>
+                        </tr>
+                        <tr class="d-flex justify-content-around">
+                            <td class="btn btn-danger" id="gas4">Un Taco de gusanos 2</td>
+                            <td class="btn btn-danger" id="gas5">Quitale el execeso de lechuga</td>
+                            <td class="btn btn-danger" id="gas6">Baia he comido gusanos Muchas veces</td>
+                        </tr>
+                        <tr class="d-flex justify-content-around">
+                            <td class="btn btn-danger" colspan="3" id="gas7">No entiendo de que tamaño tendria que ser la boca para meter este tremendo trozon de 1 sola mordida</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="3">Defensivas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="d-flex justify-content-around">
+                            <td class="btn btn-danger" id="def1">Coño de la madre</td>
+                            <td class="btn btn-danger" id="def2">Nada mas te quieren dejar en ridiculo por ser Influencer</td>
+                            <td class="btn btn-danger" id="def3">No nos vengas a faltar al respeto</td>
+                        </tr>
+                        <tr class="d-flex justify-content-around">
+                            <td class="btn btn-danger" id="def4">Si ustedes quieren ser ruidosos dense porfavor</td>
+                            <td class="btn btn-danger" id="def5">Yo no se de que habla usted</td>
+                            <td class="btn btn-danger" id="def6">La conozco?</td>
+                        </tr>
+                        <tr class="d-flex justify-content-around">
+                            <td class="btn btn-danger" id="def7">Hey porque no ha llegado mi pillo phone!?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="3">Serias</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="d-flex justify-content-around">
+                            <td class="btn btn-danger" id="seria1">Hablo a Una tienda para que me acesoren</td>
+                            <td class="btn btn-danger" id="seria2">Vamos a analizarlo a detalle</td>
+                            <td class="btn btn-danger" id="seria3">Me encantan todos los aspectos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="4">Salvadas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="d-flex justify-content-around">
+                            <td class="btn btn-danger" id="duda1">Esa fue idea mia</td>
+                            <td class="btn btn-danger" id="duda2">Hee es una buena pregunta </td>
+                            <td class="btn btn-danger" id="duda3">Uy es una excelente pregunta</td>
+                            <td class="btn btn-danger" id="duda4">No no no lo había pensado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="3">Finacieras</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="d-flex justify-content-around">
+                            <td class="btn btn-danger" id="eco1">Con efectivo</td>
+                            <td class="btn btn-danger" id="eco2">Al doble de lo que cuesta</td>
+                            <td class="btn btn-danger" id="eco3">Tome Usted mi dinero</td>
+                        </tr>
+                        <tr class="d-flex justify-content-around">
+                            <td class="btn btn-danger" id="eco4">Oloborgo es muy barato</td>
+                            <td class="btn btn-danger" id="eco5">Numero Bastante Considerable</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+   </main>
+   <script src="./static/script.js"></script>
+</body>
+</html>
